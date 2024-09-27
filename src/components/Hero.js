@@ -100,6 +100,11 @@ const Container = styled.div`
         border-radius: 5px;
         background: rgba(255, 67, 67, 1);
         color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background: red;
+        }
       }
     }
   }
