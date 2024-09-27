@@ -14,10 +14,12 @@ const NavbarContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 280px;
-  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 10%);
+  border: none;
 
-  @media screen and (min-width: ${breakpoints.lg}) {
+  @media screen and (min-width: ${breakpoints.md}) {
     max-width: 1440px;
+    height: 150px;
   }
 
   .Box {
@@ -30,6 +32,7 @@ const NavbarContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 10px;
+    z-index: 1;
 
     .LogoBox {
       width: 100%;
