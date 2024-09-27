@@ -19,12 +19,12 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   border: none;
   background-image: url(${bgImg});
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   position: relative;
 
   &::before {

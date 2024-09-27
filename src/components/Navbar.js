@@ -107,7 +107,7 @@ const NavbarContainer = styled.div`
         color: white;
         background-color: red;
         text-decoration: none;
-        padding: 10px 20px 10px 20px;
+        padding: 10px;
         border-radius: 10px;
       }
     }
