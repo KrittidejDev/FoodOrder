@@ -13,7 +13,7 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 240px;
+  height: 280px;
   background-color: hsl(0, 0%, 50%);
 
   @media screen and (min-width: ${breakpoints.lg}) {
@@ -25,18 +25,21 @@ const NavbarContainer = styled.div`
     max-width: 1000px;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    padding: 0 20px;
-    gap: 20px;
+    align-items: center;
+    padding: 10px;
 
     .LogoBox {
       width: 100%;
+      height: 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       button {
+        height: 40px;
         background: none;
         border: none;
         font-size: 38px;
@@ -52,21 +55,21 @@ const NavbarContainer = styled.div`
       .search {
         position: relative;
         width: 280px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px;
-        gap: 10px;
+        margin-top: 10px;
+
         input {
           position: relative;
           width: 100%;
-          height: 100%;
-          padding: 10px;
+          height: 40px;
           padding-left: 20px;
           border: none;
           outline: none;
           border-radius: 20px;
-          border: 1px solid #ccc;
+
           z-index: 0;
         }
 
@@ -79,22 +82,29 @@ const NavbarContainer = styled.div`
           cursor: pointer;
         }
       }
+
+      @media screen and (max-width: ${breakpoints.md}) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
     .NavList {
       display: flex;
       width: 100%;
+      height: 40px;
       justify-content: center;
       list-style: none;
       gap: 20px;
-      margin-top: 20px;
 
       li a {
+        height: 40px;
         font-size: 16px;
         color: white;
         background-color: red;
         text-decoration: none;
-        padding: 6px 12px 6px 12px;
+        padding: 10px 20px 10px 20px;
         border-radius: 10px;
       }
     }
