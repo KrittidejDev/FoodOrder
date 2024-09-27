@@ -39,7 +39,7 @@ const Container = styled.div`
   }
 
   .Box {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     padding: 20px;
     max-width: 1060px;
