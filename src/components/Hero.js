@@ -8,13 +8,6 @@ import food4 from "../assets/food4.png";
 import food5 from "../assets/food5.png";
 import food6 from "../assets/food6.png";
 
-const breakpoints = {
-  sm: "576px",
-  md: "768px",
-  lg: "992px",
-  xl: "1200px",
-};
-
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -153,7 +146,7 @@ const Hero = () => {
         </div>
 
         <div className="Card">
-          <img src={food2} alt="food4" />
+          <img src={food4} alt="food4" />
           <div>
             <h2>CAKE</h2>
             <p>
